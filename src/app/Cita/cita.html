@@ -1,0 +1,32 @@
+<html >
+<head>
+  <title> Registro de paciente</title>
+</head>
+<body >
+  <form #cita="ngForm" (ngSubmit)="insert(cita.value)">
+    <div class="input box">
+      <h1> Registro de Cita de Paciente </h1>
+      
+        <label for="nombre"> Nombre:</label> &nbsp;
+        <input type="text" name="nombre"><br> <br>
+
+        <label for="apellido"> Apellido:</label> &nbsp;
+        <input type="text" name="apellido"><br> <br>
+
+        <label for="fecha"> Fecha:</label> &nbsp;
+        <input type="date" name="fecha" /><br> <br>
+
+        <label for="hora"> Hora:</label> &nbsp;
+        <input type="time" name="hora" /><br>
+
+      </div><br>
+      <p>
+
+        <button name="Guardar" class="btn"> Cerrar </button> &nbsp; &nbsp; &nbsp;
+        <button name="Cancelar" class="btn"> Registrar </button>
+      </p>
+    
+  </form>
+</body>
+
+</html>

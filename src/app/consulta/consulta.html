@@ -1,0 +1,24 @@
+<body>
+<form #consulta="ngForm" (ngSubmit)="insert(consulta.value)"> 
+    <div class="input box">
+    <h3> Diagnostico del Paciente </h3>
+    
+    <label for="nombre"> Nombre:</label> &nbsp; 
+    <input type="text" name="nombre"><br> <br>
+
+    <label for="apellido"> Apellido:</label> &nbsp; 
+    <input type="text" name="apellido"><br> <br>
+
+    <label for="diagnostico"> Diagnostico:</label><br> <br>
+    <textarea name="comentarios" rows="15" cols="70">Diagnostico del paciente</textarea>
+
+    <br>
+    <p>
+
+      <button name="Guardar" class="btn"> Ingresar </button> &nbsp; &nbsp; &nbsp;
+      <button name="Cancelar" class="btn" > Cerrar </button>
+    </p>
+  </div>
+
+</form>
+</body>
